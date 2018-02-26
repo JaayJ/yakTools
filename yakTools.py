@@ -71,10 +71,10 @@ def ping():
   
 def ip_address():
   print("\nHost Function Declared!\n")
-  addr = os.system("host " + site)
-  print(addr)
-  main_menu()
-
+  socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)        # Creates Socket
+  addr = socket.gethostbyname(site)                                 # Gets Servers IP Address
+  print('Server IP: ' + str(addr)
+        
 def nmap():
   print("\nNmap Function Declared!\n")
   version = os.system("which nmap")
