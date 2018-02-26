@@ -73,7 +73,7 @@ def ip_address():
   print("\nHost Function Declared!\n")
   socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)        # Creates Socket
   addr = socket.gethostbyname(site)                                 # Gets Servers IP Address
-  print('Server IP: ' + str(addr)
+  print('Server IP: ' + str(addr))
         
 def nmap():
   print("\nNmap Function Declared!\n")
